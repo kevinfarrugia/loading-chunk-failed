@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  color: #3c4043;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p > code {
+  border: 1px solid #cccccc;
+  color: #000000;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.875rem;
+}
+
+pre {
+  background-color: #333333;
+  border-radius: 4px;
+  color: #f8f8f2;
+  font-size: 0.875em;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 0.625em;
+  text-align: left;
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+summary {
+  font-weight: 700;
+}
+
+hr {
+  margin: 8rem 0 1rem;
+}
+.range {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "label label"
+    "input input"
+    "low   high";
+
+  margin-bottom: 1.5em;
+}
+.range > label {
+  font-weight: 600;
+  font-size: 1.1em;
+  grid-area: label;
+  margin-bottom: 0.25em;
+}
+.range > label > code {
+  font-family: Monaco, Menlo, monospace;
+  display: inline-block;
+  background: #0001;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+.range > label > em {
+  font-weight: 400;
+  color: #666;
+}
+.range > input {
+  grid-area: input;
+}
+.range > span {
+  color: #666;
+  font-size: 0.9em;
+  padding: 0 0.3em;
+}
+.range > .low {
+  grid-area: low;
+}
+.range > .high {
+  grid-area: high;
+  text-align: right;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 0 1em;
+  max-width: 100%;
+}
+
+table th {
+  background-color: #ddd;
+  vertical-align: bottom;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  text-align: left;
+  vertical-align: top;
+}
+input[type="text"] {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
